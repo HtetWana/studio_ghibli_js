@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- my styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- my js -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="logo">
+        <h1>Studio Ghibli Films</h1>
+        <img src="GhibliLogo.png" alt="studio ghibli logo">
+    </header>
+
+    <nav id="mainnav">
+        <ul>
+            <li><a href="#films">Films</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#species">Species</a></li>
+            <li><a href="#vehicles">Vehicles</a></li>
+        </ul>
+    </nav>
+
+    <nav>
+        <form>
+            <select id="sortorder" disabled>
+                <option value="title">Title</option>
+                <option value="release_date">Release Date</option>
+                <option value="rt_score">Rotten Tomatoes Score</option>
+            </select>
+        </form>
+    </nav>
+
+    <main>
+        <!-- contents here -->
+    </main>
+
+    <footer id="footer"><a href="#logo">Up</a></footer>
+</body>
+</html>

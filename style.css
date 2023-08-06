@@ -1,0 +1,106 @@
+h1,h2,h3,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: #333;
+    background-color: #efefef;
+}
+h1,h2,h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-bottom: .5em;
+}
+h1{
+    position: absolute;
+    left: -10000px;
+}
+h2{
+    font-size: 2em;
+    font-weight: 900;
+    color: #0c3967;
+}
+p{
+    margin-bottom: 1em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+header{text-align: center;}
+header img{ max-width: 75%;}
+main{padding: 20px;}
+#mainnav{
+    margin: 1.5em 0;
+    padding: 10px;
+    background-color: rgb(128, 14, 14);
+}
+#mainnav ul{
+    list-style: none;
+}
+#mainnav ul li{
+    display: inline-block;
+}
+#mainnav ul li a{
+    padding:7px 6px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #efefef;
+}
+#mainnav ul li a:hover{background-color: #650d0d;}
+#mainnav ul li a:active{background-color: #650d0d;}
+nav{
+    text-align: center;
+    padding: 20px;
+}
+article{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+article img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: black;
+}
+footer a{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media only screen and (min-width:600px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    article{
+        margin-bottom: 0;
+    }
+    #mainnav ul{
+        list-style: none;
+    }
+    #mainnav ul li{
+        display: inline-block;
+    }
+    #mainnav ul li a{
+        margin: 15px;
+        padding: 7px 14px;
+        text-decoration: none;
+        color: #efefef;
+    }
+}
+@media only screen and (min-width:900px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
